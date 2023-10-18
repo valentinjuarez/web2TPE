@@ -1,0 +1,28 @@
+<?php
+$productData = $data;
+?>
+
+<h1> Todos nuestros Productos </h1>
+<table class='table table-bordered table-striped'>
+    <thead class='thead-dark'>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Modelo</th>
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($productData as $product) : ?>
+            <tr>
+                <td><?= $product->productName; ?></td>
+                <td>$ <?= $product->price; ?></td>
+                <td><?= $product->model; ?></td>
+                <td><?= $product->categoryName; ?></td>
+                <td><a href="productDetails/<?= $product->id_product ?>" class="btn btn-secondary">Ver Detalles</a></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+
+<?php require_once './templates/footer.phtml'; ?> 
