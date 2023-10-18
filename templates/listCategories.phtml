@@ -1,0 +1,26 @@
+<?php
+$category = $data;
+?>
+
+<h1>Nuestras categorias en productos</h1>
+<table class='table table-bordered table-striped'>
+    <thead class='thead-dark'>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($category as $categories) : ?>
+            <tr>
+                <td><?= $categories->id_categoria ?></td>
+                <td><?= $categories->categoryName ?></td>
+                <td><?= $categories->description ?></td>
+                <td><a href='productRelate/<?= $categories->id_categoria ?>' class='btn btn-success'>Mostrar Productos Relacionados</a></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+
+<?php require_once './templates/footer.phtml'; ?>

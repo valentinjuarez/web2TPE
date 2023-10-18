@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowny Tech Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container bg-primary text-white my-5 p-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="mb-4">Formulario para Insertar Productos</h1>
+            <form action="insertProducts" method="POST">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="nombreProd">Nombre del Producto</label>
+                    <input type="text" class="form-control" name="nombre" placeholder="Ingrese nombre...">
+                </div>
+                <div class="form-group">
+                    <label for="model">Modelo</label>
+                    <input type="text" class="form-control" name="model" placeholder="Ingrese el modelo...">
+                </div>
+                <div class="form-group">
+                    <label for="price">Precio</label>
+                    <input type="number" class="form-control" name="price" placeholder="Ingrese el precio...">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="weight">Peso</label>
+                    <input type="number" step="0.001" class="form-control" name="weight" placeholder="Ingrese el peso...">
+                </div>
+                <div class="form-group">
+                    <label for="height">Altura</label>
+                    <input type="number" step="0.001" class="form-control" name="height" placeholder="Ingrese la altura...">
+                </div>
+                <div class="form-group">
+                    <label for="storage">Almacenamiento</label>
+                    <input type="number" class="form-control" name="storage" placeholder="Ingrese el almacenamiento...">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="selectCategoria">Seleccione una categoría</label>
+            <select class="form-control" name="selectCategoria">
+                <option value="100">Telefono Movil</option>
+                <option value="101">Audiovisual</option>
+                <option value="103">Computadora Portatil</option>
+                <option value="104">Dispositivo Portatil</option>
+                <option value="105">Sonido</option>
+                <option value="106">Audio</option>
+                <option value="107">Escritorio</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
