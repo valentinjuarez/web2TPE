@@ -1,7 +1,7 @@
 # web2TPE
 ## Integrantes:
-- Juarez, Valentin (Contacto: valenjua06@gmail.com)
-- Sequeira, Lautaro (Contacto: lautarosequeira75@gmail.com)
+- Juarez, Valentin (Contacto: valenjua06@gmail.com) Miembro A  
+- Sequeira, Lautaro (Contacto: lautarosequeira75@gmail.com) Miembro B
 
 ## Temática:
 Hemos elegido desarrollar una tienda virtual llamada CrownyTech, especializada en la venta de productos tecnológicos seleccionados.
